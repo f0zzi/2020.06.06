@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mailclient", "mailclient\mailclient.csproj", "{98A72754-9B53-4546-B1D8-D5A0B1E48AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "material", "material\material.csproj", "{B9E0A5F9-E822-4456-961A-E07FC2CA5838}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98A72754-9B53-4546-B1D8-D5A0B1E48AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A72754-9B53-4546-B1D8-D5A0B1E48AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A72754-9B53-4546-B1D8-D5A0B1E48AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A72754-9B53-4546-B1D8-D5A0B1E48AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E0A5F9-E822-4456-961A-E07FC2CA5838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E0A5F9-E822-4456-961A-E07FC2CA5838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E0A5F9-E822-4456-961A-E07FC2CA5838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E0A5F9-E822-4456-961A-E07FC2CA5838}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDFC9141-8DB8-4393-A9D9-453FE43170F3}
+	EndGlobalSection
+EndGlobal

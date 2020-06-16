@@ -1,0 +1,57 @@
+﻿<Window x:Class="mailclient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mailclient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="476.659" Width="800">
+    <StackPanel Margin="10">
+        <StackPanel Orientation="Horizontal">
+            <Label>Login</Label>
+            <TextBox Name="tbLogin" Width="200">f0zzi.n00b@gmail.com</TextBox>
+            <Label Margin="20 0 0 0">Password</Label>
+            <PasswordBox Name="tbPassword" Width="200" Password="Y2bspz7h"></PasswordBox>
+            <Button Width="50" Margin="10 0" Click="Login_Click">Login</Button>
+            <Label Name="lConnect" Width="173"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="200" Margin="5">
+                <Button Margin="0 0 0 5">Compose</Button>
+                <ListBox Name="lbMail" Height="365" SelectionChanged="LbMail_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=UIDL}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Margin="5" Width="550">
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                    <Label Width="70">From:</Label>
+                    <TextBox Name="tbFrom" Width="480"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                    <Label Width="70">To:</Label>
+                    <TextBox Name="tbTo" Width="480"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                    <Label Width="70">Subject:</Label>
+                    <TextBox Name="tbSubject" Width="480"></TextBox>
+                </StackPanel>
+                <TextBox Name="tbBody" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0.4,5" Height="209"></TextBox>
+                <ListBox Name="lbAttach" Height="52" Margin="0,5,0.4,5">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="btDelete" Width="50" Margin="0 0 10 0">Delete</Button>
+                    <Button Name="btReply" Width="50">Reply</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>
